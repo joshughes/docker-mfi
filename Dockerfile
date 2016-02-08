@@ -10,4 +10,4 @@ WORKDIR /usr/lib/mfi
 
 EXPOSE 6443
 
-CMD ["java -jar lib/ace.jar start"]
+CMD /usr/bin/java -jar lib/ace.jar start
