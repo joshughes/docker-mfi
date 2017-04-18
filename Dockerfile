@@ -6,4 +6,4 @@ RUN echo deb http://dl.ubnt.com/mfi/distros/deb/debian debian ubiquiti >> /etc/a
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv C0A52C50 &&\
     apt-get update && apt-get upgrade -y && apt-get install -y mfi
 
-CMD /usr/bin/java -jar lib/ace.jar start
+CMD ["/usr/bin/java","-jar","lib/ace.jar","start"]
