@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:wheezy
 EXPOSE 6443 6080 6843
 WORKDIR /usr/lib/mfi
 
